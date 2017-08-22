@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            margin: 1px;
+            background: lightgreen;
+        }
+        .content{
+            width: 600px;
+            height: 200px;
+            margin: 50px auto;
+            background:lightblue;
+        }
+        .relative{
+            position: relative;
+        }
+        .absolute{
+            position: absolute;
+        }
+        .fixed{
+            position: fixed;
+        }
+        .static{
+            position: static;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="static">static</div>
+        <span class="static" style="background:blue;">span</span>
+        <div></div>
+    </div>
+    <div class="content">
+        <div class="relative">relative</div>
+        <span class="relative" style="background:blue;">span</span>
+        <div></div>
+    </div>
+    <div class="content">
+        <div class="absolute">absolute 从文档流中删除了，将正常的文档流中保留了</div>
+        <span class="absolute" style="background:blue;">span</span>
+        <div></div>
+    </div>
+    <div class="content">
+        <div class="fixed">fixed从文档流中删除了，将正常的文档流中保留了</div>
+        <span class="fixed" style="background:blue;">span</span>
+        <div></div>
+    </div>
+</body>
+</html>

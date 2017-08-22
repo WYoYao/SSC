@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+            vertical-align: middle;
+            line-height: 100%;
+        }
+        .content{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            background: lightcyan;
+        }
+        .content > div{
+            overflow: hidden;
+        }
+        .float{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: lightyellow;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="float">1</div>
+        <div class="box">2</div>
+        <div class="box" style="clear:left;">3</div>
+        <div class="box">4</div>
+    </div>
+</body>
+</html>
